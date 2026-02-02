@@ -12,8 +12,8 @@ importers:
         specifier: 16.1.2
         version: 16.1.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       next-intl:
-        specifier: 0.0.0-canary-c1152a2
-        version: 0.0.0-canary-c1152a2(next@16.1.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3)(typescript@5.9.3)
+        specifier: 4.8.2
+        version: 4.8.2(next@16.1.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3)(typescript@5.9.3)
       react:
         specifier: 19.2.3
         version: 19.2.3
@@ -439,8 +439,8 @@ packages:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
 
-  icu-minify@0.0.0-canary-c1152a2:
-    resolution: {integrity: sha512-SVIvwmOjXF3XAz1bs309x+vfaJUo2kRYD1N+sB3H7ZV6VhQo8C8xm4D50J6QL0fb22okelzijKBjEeX21gD9Hw==}
+  icu-minify@4.8.2:
+    resolution: {integrity: sha512-LHBQV+skKkjZSPd590pZ7ZAHftUgda3eFjeuNwA8/15L8T8loCNBktKQyTlkodAU86KovFXeg/9WntlAo5wA5A==}
 
   intl-messageformat@11.1.0:
     resolution: {integrity: sha512-5QJbBIRJqqBX0cD1z+r4e3B5HGmyLYzTFAW5WmSlGuwc3kHSOR0x9fEE/Z9wL2+Px9P1kwqj+wE6QzCoyooBSA==}
@@ -462,11 +462,11 @@ packages:
     resolution: {integrity: sha512-8Ofs/AUQh8MaEcrlq5xOX0CQ9ypTF5dl78mjlMNfOK08fzpgTHQRQPBxcPlEtIw0yRpws+Zo/3r+5WRby7u3Gg==}
     engines: {node: '>= 0.6'}
 
-  next-intl-swc-plugin-extractor@0.0.0-canary-c1152a2:
-    resolution: {integrity: sha512-r8GuyjlbV/YBXV5ogoLTZbdfyKt+DzJioQ9c9sqac+l29jJmUEnsUr2gLYP43gRH50fdGjM5K5oJ6jvyIOYbcA==}
+  next-intl-swc-plugin-extractor@4.8.2:
+    resolution: {integrity: sha512-sHDs36L1VZmFHj3tPHsD+KZJtnsRudHlNvT0ieIe3iFVn5OpGLTxW3d/Zc/2LXSj5GpGuR6wQeikbhFjU9tMQQ==}
 
-  next-intl@0.0.0-canary-c1152a2:
-    resolution: {integrity: sha512-0BHwzYbGmsGmYjkeqEAw+iCU7dlCIZfK6o9v4peTcu+SQl034U7B+/IjjNi2uRSNPZM9I4xk4AiK6czUy73uDg==}
+  next-intl@4.8.2:
+    resolution: {integrity: sha512-GuuwyvyEI49/oehQbBXEoY8KSIYCzmfMLhmIwhMXTb+yeBmly1PnJcpgph3KczQ+HTJMXwXCmkizgtT8jBMf3A==}
     peerDependencies:
       next: ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || >=19.0.0-rc <19.0.0 || ^19.0.0
@@ -562,8 +562,8 @@ packages:
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
-  use-intl@0.0.0-canary-c1152a2:
-    resolution: {integrity: sha512-jsLNgyRZORzP60tm33oLUycJfJYeOZUiwNNUXGlDnJwGbQr5K4t0xnfUitAVLClh2pyszHtlgqPwyTQSaThiUw==}
+  use-intl@4.8.2:
+    resolution: {integrity: sha512-3VNXZgDnPFqhIYosQ9W1Hc6K5q+ZelMfawNbexdwL/dY7BTHbceLUBX5Eeex9lgogxTp0pf1SjHuhYNAjr9H3g==}
     peerDependencies:
       react: ^17.0.0 || ^18.0.0 || >=19.0.0-rc <19.0.0 || ^19.0.0
 
@@ -870,7 +870,7 @@ snapshots:
 
   detect-libc@2.1.2: {}
 
-  icu-minify@0.0.0-canary-c1152a2:
+  icu-minify@4.8.2:
     dependencies:
       '@formatjs/icu-messageformat-parser': 3.4.0
 
@@ -891,20 +891,20 @@ snapshots:
 
   negotiator@1.0.0: {}
 
-  next-intl-swc-plugin-extractor@0.0.0-canary-c1152a2: {}
+  next-intl-swc-plugin-extractor@4.8.2: {}
 
-  next-intl@0.0.0-canary-c1152a2(next@16.1.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3)(typescript@5.9.3):
+  next-intl@4.8.2(next@16.1.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3)(typescript@5.9.3):
     dependencies:
       '@formatjs/intl-localematcher': 0.5.10
       '@parcel/watcher': 2.5.4
       '@swc/core': 1.15.8
-      icu-minify: 0.0.0-canary-c1152a2
+      icu-minify: 4.8.2
       negotiator: 1.0.0
       next: 16.1.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      next-intl-swc-plugin-extractor: 0.0.0-canary-c1152a2
+      next-intl-swc-plugin-extractor: 4.8.2
       po-parser: 2.1.1
       react: 19.2.3
-      use-intl: 0.0.0-canary-c1152a2(react@19.2.3)
+      use-intl: 4.8.2(react@19.2.3)
     optionalDependencies:
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -1005,10 +1005,10 @@ snapshots:
 
   undici-types@6.21.0: {}
 
-  use-intl@0.0.0-canary-c1152a2(react@19.2.3):
+  use-intl@4.8.2(react@19.2.3):
     dependencies:
       '@formatjs/fast-memoize': 3.1.0
       '@schummar/icu-type-parser': 1.21.5
-      icu-minify: 0.0.0-canary-c1152a2
+      icu-minify: 4.8.2
       intl-messageformat: 11.1.0
       react: 19.2.3
