@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  main:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install
+      - run: bun run build
+      - name: Test dev server
+        shell: bash
+        run: |
+          bun dev &
+          SERVER_PID=$!
+          for i in {1..30}; do
+            if curl -s http://localhost:3000/ > /dev/null 2>&1; then
+              break
+            fi
+            sleep 1
+          done
+          response=$(curl -s http://localhost:3000/)
+          if echo "$response" | grep -q "Hey John!"; then
+            echo "✓ Test passed: 'Hey John!' found in response"
+          else
+            echo "✗ Test failed: 'Hey John!' not found in response"
+            echo "Response was: $response"
+            kill $SERVER_PID 2>/dev/null || true
+            exit 1
+          fi
+          kill $SERVER_PID 2>/dev/null || true
