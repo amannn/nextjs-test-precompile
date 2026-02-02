@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <main>
-      <div>{t('hello')}</div>
+      <div>{t('hello', {name: 'John'})}</div>
     </main>
   );
 }
